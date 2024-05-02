@@ -1,0 +1,96 @@
+.modalContent{
+  box-sizing: border-box;
+  height: 100%;
+  width: 400px;
+  right: 0;
+  padding: 16px 24px 24px 24px;
+  position: absolute;
+  animation: modalSlide 0.5s forwards;
+}
+@keyframes modalSlide {
+  0%{
+    transform: translateX(400px)
+  }
+  100%{
+    transform: translateX(0px)
+  }
+}
+
+.label{
+  font-weight: bold;
+  font-size: 14px;
+
+}
+
+.headLabel{
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.input{
+  height: 30px;
+  font-size: 14px;
+  border: 1px solid #DFDDDD;
+  width: 96%;
+  margin-top: 5px;
+  padding-right: 0;
+  padding-left: 12px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+.headText {
+  color: #8D8585;
+  font-size: 14px;
+}
+
+
+.description{
+  height: 140px;
+  font-size: 14px;
+  border: 1px solid #DFDDDD;
+  width: 95%;
+  padding-left: 12px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+.formGroup{
+  margin-top:16px;
+}
+
+.buttonGroup{
+  position: fixed;
+  bottom: 0;
+}
+
+.cancelButton{
+  width: 170px;
+  height: 40px;
+  padding: 0px 14px 0px 14px;
+  border-radius: 6px;
+  background: white;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.confirmButton{
+  width: 170px;
+  height: 40px;
+  padding: 0px 14px 0px 14px;
+  border-radius: 6px;
+  background: white;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+
+@media screen and (max-device-width: 425px) {
+  .modalContent{
+    width: 100%;
+  }
+}
+
+.errorMessage{
+  color: red;
+  font-size: 14pt;
+}

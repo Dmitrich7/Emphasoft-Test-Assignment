@@ -1,0 +1,100 @@
+.container{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00beff;
+}
+
+.form{
+  background-color: white;
+  border-radius: 5px;
+  height:65vh;
+  width:50vh;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.input{
+  border: none;
+  border-bottom: #a4a4a4 solid 1px;
+  background: transparent;
+  width: 70%;
+  height: 10%;
+  font-style: italic;
+  outline: none;
+  transition: border-bottom-color 1s;
+  font-size: 20pt;
+}
+
+.input:focus::placeholder{
+  color: white;
+}
+
+.span{
+  background: transparent;
+  color: #0298c7;
+  width: 70%;
+  height: 10%;
+  margin-bottom: 20%;
+  text-align: center;
+  font-size: 40pt;
+}
+
+.button{
+  border-radius: 50vh;
+  border: none;
+  color: white;
+  background-color: #0298c7;
+  width: 70%;
+  height: 10%;
+  margin-top: 10%;
+  font-size: 40pt;
+}
+
+.button:active{
+  background-color: #00beff;
+}
+.errorMessage{
+  color: red;
+  background: white;
+  font-size: 24pt;
+}
+
+@media screen and (max-device-width: 1980px) and (min-device-width: 768px){
+  .button{
+    font-size: 22pt;
+  }
+  .span{
+    font-size: 30pt;
+  }
+  .input{
+    font-size: 14pt;
+  }
+  .errorMessage{
+    font-size: 14pt;
+  }
+}
+
+@media screen and (max-device-width: 768px){
+  .button{
+    font-size: 16pt;
+  }
+  .span{
+    font-size: 24pt;
+  }
+  .input{
+    font-size: 10pt;
+  }
+  .errorMessage{
+    font-size: 10pt;
+  }
+}
